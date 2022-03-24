@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>Noah's Daily Journal</title>
+<link rel="stylesheet" href="styles/main.css">
+
+<body>
+    <header id="journal-header">
+        <img
+        class="logo"
+        src="../images/"
+        alt=""
+        />
+    </header>
+    <main>
+        <h2>Daily Journal</h2>
+        <form action="">
+            <fieldset>
+                <label for="journalDate">Date of Journal Entry</label>
+                <input type="date" name="journalDate" id="journalDate" />
+            </fieldset>
+            <fieldset>
+                <label for="journaConcepts">Material Covered</label>
+                <input type="text" name="journalConcepts" id="journalConcepts" />
+            </fieldset>
+            <fieldset>
+                <label for="journaEntry">Journal Entry</label>
+                <textarea rows="5" cols="50" name="journalEntry" id="journalEntry">How was the day?</textarea> />
+            </fieldset>
+            <fieldset>
+                <label for="journalConfidence">How do you feel about the material?</label>
+                <select name="journalConfidence" id="journalConfidence">
+                    <option value="What is happening?">1</option>
+                    <option value="Headache.">2</option>
+                    <option value="Confusion.">3</option>
+                    <option value="Kind of confused.">4</option>
+                    <option value="Brain Blast!">5</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="journalSubmit"></label>
+                <input type="submit" value="Submit Journal Entry" name="journalSubmit"  id="journalSubmit" />
+            </fieldset>
+        </form>
+        <section class="journal-previous-entries">
+            <article>
+                <h3 class="journal-entry-date">DATE</h3>
+                <h3 class="journal-entry-concepts">CONCEPTS</h3>
+                <article class="journal-entry-body">
+                    <p>JOURNAL ENTRY BODY                        
+                    </article>
+                    <button>EDIT</button><button>DELETE</button>
+            </article>
+        </section>
+    </main>
+    <footer>&copy; Noahwinkler3700 </footer>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
